@@ -21,6 +21,7 @@ Route::get('detail', [\App\Http\Controllers\HomeController::class, 'detail'])->n
 
 Route::get('admin/dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard.index')->middleware('is_admin');
 Route::resource('admin/cars', \App\Http\Controllers\Admin\CarController::class);
+Route::get('admin/cars/create', [\App\Http\Controllers\Admin\CarController::class, 'create'])->name('admin.cars.create')->middleware('is_admin');
 
 Auth::routes();
 

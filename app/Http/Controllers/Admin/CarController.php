@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller; 
 use Illuminate\Http\Request;
 use App\Models\Car;
+use App\Http\Request\Admin\CarStoreRequest;
+
 
 class CarController extends Controller
 {
@@ -23,15 +25,24 @@ class CarController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.cars.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(CarStoreRequest $request)
     {
-        //
+        if($request->validated()){
+            $gambar = $request->file('gambar')->store('
+            gambar/cars', 'public');
+
+            Car::create($request->except('gambar')+['gambar' => $gambar]);
+        }
+        return redirect()->route('cars.index')->with([
+            'message' => 'data sukses dibuat',
+            'alert-type' => 'success'
+        ]);
     }
 
     /**

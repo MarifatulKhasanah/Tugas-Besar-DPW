@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+
 class Car extends Controller
 {
     /**
@@ -20,7 +21,7 @@ class Car extends Controller
      */
     public function create()
     {
-        //
+        return view('adin.cars.create');
     }
 
     /**

@@ -43,11 +43,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link active" href="{{route('homepage')}}">Home</a>
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('homepage')}}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about">About Us</a>
+              <a class="nav-link active" href="/about">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contact">Contact</a>
@@ -57,7 +57,7 @@
       </div>
     </nav>
     <!-- Header-->
-    <header class="bg-dark py-5">
+    <!-- <header class="bg-dark py-5">
       <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
           <h1 class="display-4 fw-bolder">Drivvy</h1>
@@ -66,7 +66,7 @@
           </p>
         </div>
       </div>
-    </header>
+    </header> -->
     @yield('content')
         <!-- Footer-->
     <div class="footer-basic">
