@@ -8,10 +8,11 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Contact Kami- Laravel</title>
+    <title>Contact Us - Drivvy</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
     <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
       rel="stylesheet"
@@ -27,8 +28,8 @@
   <body>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="./index.html">Start Bootstrap</a>
+      <div class="container px-2 px-lg-0">
+        <a class="navbar-brand" href="#"><img src="assets/logo.png" width="160px" height="35px" alt=""></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -46,6 +47,9 @@
               <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link " href="./aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link active" href="./contact.html">Contact</a>
             </li>
           </ul>
@@ -56,7 +60,7 @@
     <header class="bg-dark py-5">
       <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
-          <h1 class="display-4 fw-bolder">Kontak Kami</h1>
+          <h1 class="display-4 fw-bolder">Contact Us</h1>
         </div>
       </div>
     </header>
@@ -113,7 +117,7 @@
                     style="height: 50px; width: 400px; margin: 0 auto"
                     class="d-block btn btn-primary"
                   >
-                    Kirim Pesan
+                    Send Message
                   </button>
                 </div>
               </form>
@@ -156,13 +160,21 @@
       </div>
     </div>
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">
-          Copyright &copy; Your Website 2022
-        </p>
-      </div>
-    </footer>
+    <div class="footer-basic">
+      <footer>
+          <div class="social">
+            <a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i>
+            </a><a href="https://www.facebook.com/?locale=id_ID"><i class="icon ion-social-twitter"></i></a>
+            <a href="https://twitter.com/?lang=id"><i class="icon ion-social-facebook"></i></a></div>
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="index.html">Home</a></li>
+              <li class="list-inline-item"><a href="aboutus.html">About</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          </ul>
+          <p class="copyright">Drivvy © 2023</p>
+      </footer>
+  </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

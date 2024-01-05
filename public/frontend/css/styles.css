@@ -3133,13 +3133,13 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #4F33A6;
+  border-color: #4F33A6;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #b6a5e7;
+  border-color: #b6a5e7
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
@@ -3253,13 +3253,13 @@ fieldset:disabled .btn {
 
 .btn-info {
   color: #000;
-  background-color: #0dcaf0;
-  border-color: #0dcaf0;
+  background-color: #b2a3dd;
+  border-color: #b2a3dd;
 }
 .btn-info:hover {
   color: #000;
-  background-color: #31d2f2;
-  border-color: #25cff2;
+  background-color: #361d79;
+  border-color: #361d79;
 }
 .btn-check:focus + .btn-info,
 .btn-info:focus {
@@ -7991,6 +7991,8 @@ fieldset:disabled .btn {
 
 .fw-normal {
   font-weight: 400 !important;
+  color: #C5B9E8;
+  font-size: 22px;
 }
 
 .fw-bold {
@@ -7999,6 +8001,7 @@ fieldset:disabled .btn {
 
 .fw-bolder {
   font-weight: bolder !important;
+
 }
 
 .lh-1 {
@@ -8070,7 +8073,7 @@ fieldset:disabled .btn {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: #4F33A6;
 }
 
 .text-secondary {
@@ -8208,7 +8211,7 @@ fieldset:disabled .btn {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #120E24;
 }
 
 .bg-black {

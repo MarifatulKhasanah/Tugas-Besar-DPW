@@ -4,7 +4,7 @@
 <header class="bg-dark py-5">
       <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
-          <h1 class="display-4 fw-bolder">Detail Mobil</h1>
+          <h1 class="display-4 fw-bolder">Car Details</h1>
         </div>
       </div>
     </header>
@@ -17,20 +17,20 @@
               <!-- Product image-->
               <img
                 class="card-img-top"
-                src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                src="https://i.pinimg.com/564x/22/8d/9f/228d9f32720a572f704a88d816487c5c.jpg"
                 alt="..."
               />
               <!-- Product details-->
               <div class="card-body card-body-custom pt-4">
                 <div>
                   <!-- Product name-->
-                  <h3 class="fw-bolder text-primary">Deskripsi</h3>
+                  <h3 class="fw-bolder text-primary">Description</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Ipsa dolor corrupti porro, sit ex nemo itaque, est
-                    voluptatum illum dignissimos facilis alias facere rem
-                    consequatur?
-                  </p>
+                    Enjoy your adventure with our rental car, Mitsubishi Pajero Sport, 
+                    which offers the perfect combination of comfort and performance 
+                    Tough. With advanced engine specifications, the Pajero Sport gives the engine a high performance. 
+                    an impressive driving experience, equipped with features 
+                    Current security to ensure your trip is safe and enjoyable.
                   <div class="mobil-info-list border-top pt-4">
                     <ul class="list-unstyled">
                       <li>
@@ -38,11 +38,11 @@
                         <span>P3K</span>
                       </li>
                       <li>
-                        <i class="ri-close-circle-line text-secondary"></i>
+                        <i class="ri-checkbox-circle-line"></i>
                         <span>CHARGER</span>
                       </li>
                       <li>
-                        <i class="ri-close-circle-line text-secondary"></i>
+                        <i class="ri-checkbox-circle-line"></i>
                         <span>AUDIO</span>
                       </li>
                       <li>
@@ -67,7 +67,7 @@
                     <h5 class="fw-bolder">Special Item</h5>
                     <div class="rent-price mb-3">
                       <span style="font-size: 1rem" class="text-primary"
-                        >Rp.200.000/</span
+                        >Rp.1.000.000/</span
                       >day
                     </div>
                   </div>
@@ -75,20 +75,20 @@
                     <li
                       class="border-bottom p-2 d-flex justify-content-between"
                     >
-                      <span>Bahan Bakar</span>
-                      <span style="font-weight: 600">Bensin</span>
+                      <span>Fuel</span>
+                      <span style="font-weight: 600">Diesel</span>
                     </li>
                     <li
                       class="border-bottom p-2 d-flex justify-content-between"
                     >
-                      <span>Jumlah Kursi</span>
-                      <span style="font-weight: 600">5</span>
+                      <span>Chairs Amount</span>
+                      <span style="font-weight: 600">7</span>
                     </li>
                     <li
                       class="border-bottom p-2 d-flex justify-content-between"
                     >
-                      <span>Transmisi</span>
-                      <span style="font-weight: 600">Manual</span>
+                      <span>Transmission</span>
+                      <span style="font-weight: 600">CVTMT</span>
                     </li>
                   </ul>
                 </div>
@@ -98,9 +98,9 @@
                 <div class="text-center">
                   <a
                     class="btn d-flex align-items-center justify-content-center btn-primary mt-auto"
-                    href="#"
+                    href="https://wa.me/+62895377044585"
                     style="column-gap: 0.4rem"
-                    >Sewa Mobil <i class="ri-whatsapp-line"></i
+                    >Rent This Car <i class="ri-whatsapp-line"></i
                   ></a>
                 </div>
               </div>

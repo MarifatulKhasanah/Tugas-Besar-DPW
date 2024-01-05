@@ -20,4 +20,9 @@ class HomeController extends Controller
     {
         return view('frontend.detail');
     }
+
+    public function about()
+    {
+        return view('frontend.about');
+    }
 }

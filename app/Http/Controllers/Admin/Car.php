@@ -5,14 +5,14 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
+class Car extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('home');
+        //
     }
 
     /**
@@ -63,6 +63,3 @@ class DashboardController extends Controller
         //
     }
 }
-
-
-
