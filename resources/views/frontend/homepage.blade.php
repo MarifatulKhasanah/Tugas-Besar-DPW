@@ -60,7 +60,7 @@
                   <a class="btn btn-primary mt-auto" href="https://wa.me/+62895377044585">Rent</a>
                   <a
                     class="btn btn-info mt-auto text-white"
-                    href="./detail.blade.php"
+                    href="{{ route('detail') }}"
                     >Detail</a
                   >
                 </div>
@@ -119,7 +119,7 @@
                   <a class="btn btn-primary mt-auto" href="https://wa.me/+62895377044585">Rent</a>
                   <a
                     class="btn btn-info mt-auto text-white"
-                    href="./detail.html"
+                    href="{{ route('detail') }}"
                     >Detail</a
                   >
                 </div>
@@ -178,7 +178,7 @@
                   <a class="btn btn-primary mt-auto" href="https://wa.me/+62895377044585">Rent</a>
                   <a
                     class="btn btn-info mt-auto text-white"
-                    href="./detail.html"
+                    href="{{ route('detail') }}"
                     >Detail</a
                   >
                 </div>
@@ -238,7 +238,7 @@
                   <a class="btn btn-primary mt-auto" href="https://wa.me/+62895377044585">Rent</a>
                   <a
                     class="btn btn-info mt-auto text-white"
-                    href="./detail.html"
+                    href="{{ route('detail') }}"
                     >Detail</a
                   >
                 </div>
@@ -298,7 +298,7 @@
                   <a class="btn btn-primary mt-auto" href="https://wa.me/+62895377044585">Rent</a>
                   <a
                     class="btn btn-info mt-auto text-white"
-                    href="./detail.html"
+                    href="{{ route('detail') }}"
                     >Detail</a
                   >
                 </div>
@@ -358,7 +358,7 @@
                   <a class="btn btn-primary mt-auto" href="https://wa.me/+62895377044585">Rent</a>
                   <a
                     class="btn btn-info mt-auto text-white"
-                    href="./detail.html"
+                    href="{{ route('detail') }}"
                     >Detail</a
                   >
                 </div>
@@ -418,7 +418,7 @@
                   <a class="btn btn-primary mt-auto" href="https://wa.me/+62895377044585">Rent</a>
                   <a
                     class="btn btn-info mt-auto text-white"
-                    href="./detail.html"
+                    href="{{ route('detail') }}"
                     >Detail</a
                   >
                 </div>
@@ -478,7 +478,7 @@
                   <a class="btn btn-primary mt-auto" href="https://wa.me/+62895377044585">Rent</a>
                   <a
                     class="btn btn-info mt-auto text-white"
-                    href="./detail.html"
+                    href="{{ route('detail') }}"
                     >Detail</a
                   >
                 </div>
