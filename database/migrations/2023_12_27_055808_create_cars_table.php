@@ -14,14 +14,13 @@ return new class extends Migration
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
             $table->string('nama_mobil');
-            $table->string('slug');
             $table->integer('harga_sewa');
-            $table->text('gambar');
+            $table->string('gambar');
             $table->string('bahan_bakar');
             $table->string('jumlah_kursi');
-            $table->string('tranmisi');
+            $table->string('transmisi');
             $table->string('status');
-            $table->text('deskripi');
+            $table->string('deskripsi');
             $table->boolean('p3k');
             $table->boolean('charger');
             $table->boolean('audio');

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller; 
 use Illuminate\Http\Request;
 use App\Models\Car;
-use App\Http\Request\Admin\CarStoreRequest;
+use App\Http\Requests\Admin\CarStoreRequest;
 
 
 class CarController extends Controller
@@ -31,42 +31,101 @@ class CarController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(CarStoreRequest $request)
+    public function store(Request $request)
     {
-        if($request->validated()){
-            $gambar = $request->file('gambar')->store('
-            gambar/cars', 'public');
-
-            Car::create($request->except('gambar')+['gambar' => $gambar]);
-        }
-        return redirect()->route('cars.index')->with([
-            'message' => 'data sukses dibuat',
-            'alert-type' => 'success'
+        $request->validate([
+            'nama_mobil' => 'required',
+            'harga_sewa' => 'required',
+            'gambar' => 'required',
+            'bahan_bakar' => 'required',
+            'jumlah_kursi' => 'required',
+            'transmisi' => 'nullable',
+            'status' => 'required',
+            'deskripsi' => 'required',
+            'p3k' =>'required',
+            'charger' => 'required',
+            'audio' => 'required',
+            'ac' => 'required',
         ]);
+
+        $cars = new Car();
+        $cars->nama_mobil = $request->nama_mobil;
+        $cars->harga_sewa = $request->harga_sewa;
+        $cars->gambar = $request->gambar;
+        $cars->bahan_bakar = $request->bahan_bakar;
+        $cars->jumlah_kursi = $request->jumlah_kursi;
+        $cars->transmisi = $request->tranmisi;
+        $cars->status = $request->status;
+        $cars->deskripsi = $request->deskripsi;
+        $cars->p3k = $request->p3k;
+        $cars->charger = $request->charger;
+        $cars->audio = $request->audio;
+        $cars->ac = $request->ac;
+        $cars->save();
+
+        return redirect()->route('create')->with('success', 'Berhasil menambahkan data');
+        
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show()
     {
-        //
+        $cars = Car::all();
+        return view('frontend.homepage', compact('cars'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
-        //
+
+        $cars = Car::find($id);
+
+        if(!$cars){
+            abort(404);
+        }
+        return view('admin.cars.edit', compact('cars'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'nama_mobil' => 'required',
+            'harga_sewa' => 'required',
+            'gambar' => 'required',
+            'bahan_bakar' => 'required',
+            'jumlah_kursi' => 'required',
+            'transmisi' => 'nullable',
+            'status' => 'required',
+            'deskripsi' => 'required',
+            'p3k' =>'required',
+            'charger' => 'required',
+            'audio' => 'required',
+            'ac' => 'required',
+        ]);
+
+        $cars = Car::find($id);
+        $cars->nama_mobil = $request->nama_mobil;
+        $cars->harga_sewa = $request->harga_sewa;
+        $cars->gambar = $request->gambar;
+        $cars->bahan_bakar = $request->bahan_bakar;
+        $cars->jumlah_kursi = $request->jumlah_kursi;
+        $cars->transmisi = $request->tranmisi;
+        $cars->status = $request->status;
+        $cars->deskripsi = $request->deskripsi;
+        $cars->p3k = $request->p3k;
+        $cars->charger = $request->charger;
+        $cars->audio = $request->audio;
+        $cars->ac = $request->ac;
+        $cars->save();
+
+        return redirect()->route('create')->with('success', 'Berhasil menambahkan data');
     }
 
     /**

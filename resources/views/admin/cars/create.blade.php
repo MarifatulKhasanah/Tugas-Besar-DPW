@@ -7,7 +7,7 @@
           
         
 <div class="card-body">
-<form action="{{route('cars.store')}}" method = "post" enctype="multipart/form-date">
+<form action="{{route('store')}}" method = "post" enctype="multipart/form-date">
     <div class="form-group">
         <label for="nama_mobil">Nama Mobil</label>
         <input type="text" name="nama_mobil" class="form-control" value="{{ old('nama_mobil') }}">
@@ -27,15 +27,15 @@
     </div>
     <div class="form-group">
         <label for="transmisi">Transmisi</label>
-       <select name="transmisi" id="transmisi"class="form-control">
-        <option value="manual"> Manual</option>
+       <select name="tranmisi" id="tranmisi"class="form-control">
+        <option selected value="manual"> Manual</option>
         <option value="otomatis"> Otomatis</option>
        </select>
     </div>
     <div class="form-group">
         <label for="status">Status</label>
        <select name="status" id="status"class="form-control">
-        <option value=tersedia">Tersedia</option>
+        <option selected value=tersedia>Tersedia</option>
         <option value="tidak tersedia"> Tidak Tersedia</option>
        </select>
     </div>
@@ -46,37 +46,37 @@
     <div class="form-group">
         <label for="p3k">P3K</label>
        <select name="p3k" id="p3k"class="form-control">
-        <option value="1">Tersedia</option>
+        <option selected value="1">Tersedia</option>
         <option value="0"> Tidak Tersedia</option>
        </select>
     </div>
     <div class="form-group">
         <label for="audio">Audio</label>
        <select name="audio" id="audio"class="form-control">
-        <option value="1">Tersedia</option>
+        <option selected value="1">Tersedia</option>
         <option value="0"> Tidak Tersedia</option>
        </select>
     </div>
     <div class="form-group">
         <label for="charger">Charger</label>
        <select name="charger" id="charger"class="form-control">
-        <option value="1">Tersedia</option>
+        <option selected value="1">Tersedia</option>
         <option value="0"> Tidak Tersedia</option>
        </select>
     </div>
     <div class="form-group">
         <label for="ac">AC</label>
        <select name="ac" id="ac"class="form-control">
-        <option value="1">Tersedia</option>
+        <option selected value="1">Tersedia</option>
         <option value="0"> Tidak Tersedia</option>
-       </select>
+       </select> 
     </div>
     <div class="form-group">
         <label for="gambar">Gambar</label>
         <input type="file" class="form-control" name="gambar">
     </div>
     <div class="form-group">
-        <button type="submit" class="vt btn-primary">Simpan</button>
+        <button type="submit" class="btn btn-primary">Simpan</button>
     </div>
 </form>
     </div>

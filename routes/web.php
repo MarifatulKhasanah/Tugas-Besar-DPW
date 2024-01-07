@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,9 +18,13 @@ Route::get('contact', [\App\Http\Controllers\HomeController::class, 'contact'])-
 Route::get('about', [\App\Http\Controllers\HomeController::class, 'about'])->name('about');
 Route::get('detail', [\App\Http\Controllers\HomeController::class, 'detail'])->name('detail');
 
-Route::get('admin/dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard.index')->middleware('is_admin');
-Route::resource('admin/cars', \App\Http\Controllers\Admin\CarController::class);
-Route::get('admin/cars/create', [\App\Http\Controllers\Admin\CarController::class, 'create'])->name('admin.cars.create')->middleware('is_admin');
+Route::get('admin/dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('index')->middleware('is_admin');
+Route::get('admin/cars/create', [\App\Http\Controllers\Admin\CarController::class, 'create'])->name('create')->middleware('is_admin');
+Route::post('admin/cars/create', [\App\Http\Controllers\Admin\CarController::class, 'store'])->name('store');
+Route::get('create', [\App\Http\Controllers\Admin\CarController::class, 'create'])->name('create');
+Route::get('show', [\App\Http\Controllers\Admin\CarController::class, 'show'])->name('show');
+Route::get('edit/{id}', [\App\Http\Controllers\Admin\CarController::class, 'edit'])->name('edit');
+Route::post('update/{id}', [\App\Http\Controllers\Admin\CarController::class, 'update'])->name('update');
 
 Auth::routes();
 

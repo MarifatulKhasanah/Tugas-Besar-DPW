@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Car;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('frontend.homepage');
+        $cars = Car::all();
+        return view('frontend.homepage', compact('cars'));
     }
 
     public function contact()
@@ -17,8 +19,10 @@ class HomeController extends Controller
     }
 
     public function detail()
-    {
-        return view('frontend.detail');
+    {   
+        $cars = Car::all();
+
+        return view('frontend.detail', compact('cars'));
     }
 
     public function about()

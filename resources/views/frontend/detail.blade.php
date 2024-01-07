@@ -14,11 +14,12 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 mb-5">
             <div class="card h-100">
+              @foreach($cars as $car)
               <!-- Product image-->
               <img
-                class="card-img-top"
-                src="https://i.pinimg.com/564x/22/8d/9f/228d9f32720a572f704a88d816487c5c.jpg"
-                alt="..."
+              class="card-img-top"
+              src="{{URL('frontend/assets/Mobil/' . $car->gambar . '')}}"
+              alt="..."
               />
               <!-- Product details-->
               <div class="card-body card-body-custom pt-4">
@@ -26,30 +27,26 @@
                   <!-- Product name-->
                   <h3 class="fw-bolder text-primary">Description</h3>
                   <p>
-                    Enjoy your adventure with our rental car, Mitsubishi Pajero Sport, 
-                    which offers the perfect combination of comfort and performance 
-                    Tough. With advanced engine specifications, the Pajero Sport gives the engine a high performance. 
-                    an impressive driving experience, equipped with features 
-                    Current security to ensure your trip is safe and enjoyable.
-                  <div class="mobil-info-list border-top pt-4">
-                    <ul class="list-unstyled">
-                      <li>
-                        <i class="ri-checkbox-circle-line"></i>
-                        <span>P3K</span>
-                      </li>
-                      <li>
-                        <i class="ri-checkbox-circle-line"></i>
-                        <span>CHARGER</span>
-                      </li>
-                      <li>
-                        <i class="ri-checkbox-circle-line"></i>
-                        <span>AUDIO</span>
-                      </li>
-                      <li>
-                        <i class="ri-checkbox-circle-line"></i>
-                        <span>AC</span>
-                      </li>
-                    </ul>
+                    {{$car->deskripsi}}
+                    <div class="mobil-info-list border-top pt-4">
+                      <ul class="list-unstyled">
+                        <li>
+                          <i class="ri-checkbox-circle-line"></i>
+                          <span>P3K</span>
+                        </li>
+                        <li>
+                          <i class="ri-checkbox-circle-line"></i>
+                          <span>CHARGER</span>
+                        </li>
+                        <li>
+                          <i class="ri-checkbox-circle-line"></i>
+                          <span>AUDIO</span>
+                        </li>
+                        <li>
+                          <i class="ri-checkbox-circle-line"></i>
+                          <span>AC</span>
+                        </li>
+                      </ul>
                   </div>
                 </div>
               </div>
@@ -62,51 +59,52 @@
                 <div class="text-center">
                   <!-- Product name-->
                   <div
-                    class="d-flex justify-content-between align-items-center"
+                  class="d-flex justify-content-between align-items-center"
                   >
-                    <h5 class="fw-bolder">Special Item</h5>
-                    <div class="rent-price mb-3">
-                      <span style="font-size: 1rem" class="text-primary"
-                        >Rp.1.000.000/</span
-                      >day
-                    </div>
+                  <h5 class="fw-bolder">{{$car->nama_mobil}}</h5>
+                  <div class="rent-price mb-3">
+                    <span style="font-size: 1rem" class="text-primary"
+                    >Rp. {{number_format($car->harga_sewa, 0, ',' , '.')}}/</span
+                    >day
                   </div>
-                  <ul class="list-unstyled list-style-group">
-                    <li
-                      class="border-bottom p-2 d-flex justify-content-between"
-                    >
-                      <span>Fuel</span>
-                      <span style="font-weight: 600">Diesel</span>
-                    </li>
-                    <li
-                      class="border-bottom p-2 d-flex justify-content-between"
-                    >
-                      <span>Chairs Amount</span>
-                      <span style="font-weight: 600">7</span>
-                    </li>
-                    <li
-                      class="border-bottom p-2 d-flex justify-content-between"
-                    >
-                      <span>Transmission</span>
-                      <span style="font-weight: 600">CVTMT</span>
-                    </li>
-                  </ul>
                 </div>
-              </div>
-              <!-- Product actions-->
-              <div class="card-footer border-top-0 bg-transparent">
-                <div class="text-center">
-                  <a
-                    class="btn d-flex align-items-center justify-content-center btn-primary mt-auto"
-                    href="https://wa.me/+62895377044585"
-                    style="column-gap: 0.4rem"
-                    >Rent This Car <i class="ri-whatsapp-line"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                <ul class="list-unstyled list-style-group">
+                  <li
+                  class="border-bottom p-2 d-flex justify-content-between"
+                  >
+                  <span>Fuel</span>
+                  <span style="font-weight: 600">{{$car->bahan_bakar}}</span>
+                </li>
+                <li
+                class="border-bottom p-2 d-flex justify-content-between"
+                >
+                <span>Chairs Amount</span>
+                <span style="font-weight: 600">{{$car->jumlah_kursi}}</span>
+              </li>
+              <li
+              class="border-bottom p-2 d-flex justify-content-between"
+              >
+              <span>Transmission</span>
+              <span style="font-weight: 600">{{$car->transmisi}}</span>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+      <!-- Product actions-->
+      <div class="card-footer border-top-0 bg-transparent">
+        <div class="text-center">
+          <a
+          class="btn d-flex align-items-center justify-content-center btn-primary mt-auto"
+          href="https://wa.me/+62895377044585"
+          style="column-gap: 0.4rem"
+          >Rent This Car <i class="ri-whatsapp-line"></i
+          ></a>
+        </div>
+      </div>
+      @endforeach
+    </div>
+  </div>
+</div>
+</div>
+</section>
 @endsection
