@@ -18,11 +18,16 @@ class HomeController extends Controller
         return view('frontend.contact');
     }
 
-    public function detail()
+    public function detail($id)
     {   
-        $cars = Car::all();
+        $car = Car::find($id);
 
-        return view('frontend.detail', compact('cars'));
+        if (!$car) {
+            // Handle case where car is not found
+            abort(404);
+        }
+
+        return view('frontend.detail', compact('car'));
     }
 
     public function about()

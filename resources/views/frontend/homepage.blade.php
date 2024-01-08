@@ -41,12 +41,9 @@
           <div class="col mb-5">
             <div class="card h-100">
               <!-- Sale badge-->
-              <div
-              class="badge badge-custom bg-success text-white position-absolute"
-              style="top: 0; right: 0"
-              >
+              <div class="badge badge-custom {{$car->status == 'tersedia' ? 'bg-success' : 'bg-danger'}} text-white position-absolute" style="top: 0; right: 0">
               {{$car->status}}
-            </div>
+              </div>
             <!-- Product image-->
             <img
             class="card-img-top"
@@ -88,11 +85,7 @@
       <div class="card-footer border-top-0 bg-transparent">
         <div class="text-center">
           <a class="btn btn-primary mt-auto" href="https://wa.me/+62895377044585">Rent</a>
-          <a
-          class="btn btn-info mt-auto text-white"
-          href="{{ route('detail') }}"
-          >Detail</a
-          >
+          <a class="btn btn-info mt-auto text-white" href="{{ route('detail', ['id' => $car->id]) }}">Detail</a>
             </div>
           </div>
          </div>

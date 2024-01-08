@@ -54,7 +54,7 @@ class CarController extends Controller
         $cars->gambar = $request->gambar;
         $cars->bahan_bakar = $request->bahan_bakar;
         $cars->jumlah_kursi = $request->jumlah_kursi;
-        $cars->transmisi = $request->tranmisi;
+        $cars->transmisi = $request->transmisi;
         $cars->status = $request->status;
         $cars->deskripsi = $request->deskripsi;
         $cars->p3k = $request->p3k;
@@ -63,7 +63,7 @@ class CarController extends Controller
         $cars->ac = $request->ac;
         $cars->save();
 
-        return redirect()->route('create')->with('success', 'Berhasil menambahkan data');
+        return redirect()->route('index')->with('success', 'Berhasil menambahkan data');
         
     }
 
@@ -116,7 +116,7 @@ class CarController extends Controller
         $cars->gambar = $request->gambar;
         $cars->bahan_bakar = $request->bahan_bakar;
         $cars->jumlah_kursi = $request->jumlah_kursi;
-        $cars->transmisi = $request->tranmisi;
+        $cars->transmisi = $request->transmisi;
         $cars->status = $request->status;
         $cars->deskripsi = $request->deskripsi;
         $cars->p3k = $request->p3k;
@@ -125,7 +125,7 @@ class CarController extends Controller
         $cars->ac = $request->ac;
         $cars->save();
 
-        return redirect()->route('create')->with('success', 'Berhasil menambahkan data');
+        return redirect()->route('index')->with('success', 'Berhasil menambahkan data');
     }
 
     /**

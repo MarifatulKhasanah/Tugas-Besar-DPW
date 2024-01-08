@@ -26,7 +26,7 @@
     </div>
     <div class="form-group">
         <label for="transmisi">Transmisi</label>
-        <select name="tranmisi" id="tranmisi"class="form-control">
+        <select name="transmisi" id="transmisi"class="form-control">
             <option selected>{{$cars->transmisi}}</option>
             <option value="manual">Manual</option>
             <option value="otomatis"> Otomatis</option>

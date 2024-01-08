@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
 Route::get('contact', [\App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 Route::get('about', [\App\Http\Controllers\HomeController::class, 'about'])->name('about');
-Route::get('detail', [\App\Http\Controllers\HomeController::class, 'detail'])->name('detail');
+Route::get('detail/{id}', [\App\Http\Controllers\HomeController::class, 'detail'])->name('detail');
 
 Route::get('admin/dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('index')->middleware('is_admin');
 Route::get('admin/cars/create', [\App\Http\Controllers\Admin\CarController::class, 'create'])->name('create')->middleware('is_admin');
