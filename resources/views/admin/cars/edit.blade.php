@@ -26,28 +26,18 @@
     </div>
     <div class="form-group">
         <label for="transmisi">Transmisi</label>
-        <select name="transmisi" id="transmisi" class="form-control">
-            <option selected>
-                @if($cars->transmisi == 'manual')
-                Manual
-                @else
-                Otomatic
-                @endif
-            </option>
-            <option value="1"> Manual</option>
-            <option value="0"> Otomatic</option>
+        <select name="transmisi" id="transmisi"class="form-control">
+            <option selected>{{$cars->transmisi}}</option>
+            <option value="manual">Manual</option>
+            <option value="otomatis"> Otomatis</option>
         </select>
     </div>
     <div class="form-group">
         <label for="status">Status</label>
-        <select name="status" id="status" class="form-control" required>
-            @if($cars->status == '1')
-               <option value="1">Available</option>
-            @else
-            <option value="0">Not Available</option>
-            @endif
-            <option value="1">Available</option>
-            <option value="0">Not Available</option>
+        <select name="status" id="status"class="form-control">
+            <option selected>{{$cars->status}}</option>
+            <option value="tersedia"> Tidak Tersedia</option>
+            <option value="tidak tersedia"> Tidak Tersedia</option>
         </select>
     </div>
     <div class="form-group">
