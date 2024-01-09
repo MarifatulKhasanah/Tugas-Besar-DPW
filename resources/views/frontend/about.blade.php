@@ -69,7 +69,7 @@
                   <p>"Discover freedom in exploration! Rent a car for a personalized journey through new destinations, 
                     <br>where you set the pace of your adventure."<br>
                      </p>
-                  <a href="index.html" class="btn btn-primary btnGetStarted shadow-none">Rent Now!</a>
+                  <a href="{{route('homepage')}}" class="btn btn-primary btnGetStarted shadow-none">Rent Now!</a>
               </div>
               <div class="col-md-7 imageHero">
                   <img class="img-fluid" src="{{asset('frontend/assets/car.png')}}" alt="hero image">
@@ -118,7 +118,7 @@
       <div class="row text-center">
         <div class="col-md-4 mb-5 mb-md-0">
           <div class="d-flex justify-content-center mb-4">
-            <img src="assets/person1.jpg"
+            <img src="https://i.pinimg.com/564x/05/c3/59/05c359ed41f715811852362b4d6b0158.jpg"
               class="rounded-circle shadow-1-strong" width="150" height="150" />
           </div>
           <h5 class="mb-3">Marco Naratama</h5>
@@ -135,7 +135,7 @@
           </div>
         <div class="col-md-4 mb-5 mb-md-0">
           <div class="d-flex justify-content-center mb-4">
-            <img src="assets/person2.jpg"
+            <img src="https://i.pinimg.com/564x/a6/d1/89/a6d1890786e2f7102efcf536978ef311.jpg"
               class="rounded-circle shadow-1-strong" width="150" height="150" />
           </div>
           <h5 class="mb-3">Naura Celine</h5>
@@ -151,7 +151,7 @@
           </div>
         <div class="col-md-4 mb-5 mb-md-0">
             <div class="d-flex justify-content-center mb-4">
-                <img src="assets/person3.jpg"
+                <img src="https://i.pinimg.com/564x/a9/5a/18/a95a18776dd40bbd2caf74019aa9aa1f.jpg"
                 class="rounded-circle shadow-1-strong" width="150" height="150" />
           </div>
           <h5 class="mb-3">Javier Kana</h5>
