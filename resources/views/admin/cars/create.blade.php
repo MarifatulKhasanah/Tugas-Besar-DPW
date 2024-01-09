@@ -28,15 +28,15 @@
     <div class="form-group">
         <label for="transmisi">Transmisi</label>
        <select name="transmisi" id="transmisi"class="form-control">
-        <option selected value="manual"> Manual</option>
-        <option value="otomatis"> Otomatis</option>
+        <option selected value="Manual"> Manual</option>
+        <option value="Automatic"> Automatic</option>
        </select>
     </div>
     <div class="form-group">
         <label for="status">Status</label>
        <select name="status" id="status"class="form-control">
-        <option selected value=tersedia>Tersedia</option>
-        <option value="tidak tersedia"> Tidak Tersedia</option>
+        <option selected value=Tersedia>Tersedia</option>
+        <option value="Tidak Tersedia"> Tidak Tersedia</option>
        </select>
     </div>
     <div class="form-group">

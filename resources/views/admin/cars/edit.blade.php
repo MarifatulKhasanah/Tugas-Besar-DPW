@@ -28,16 +28,16 @@
         <label for="transmisi">Transmisi</label>
         <select name="transmisi" id="transmisi"class="form-control">
             <option selected>{{$cars->transmisi}}</option>
-            <option value="manual">Manual</option>
-            <option value="otomatis"> Otomatis</option>
+            <option value="Manual">Manual</option>
+            <option value="Automatic"> Automatic</option>
         </select>
     </div>
     <div class="form-group">
         <label for="status">Status</label>
         <select name="status" id="status"class="form-control">
             <option selected>{{$cars->status}}</option>
-            <option value="tersedia"> Tidak Tersedia</option>
-            <option value="tidak tersedia"> Tidak Tersedia</option>
+            <option value="Tersedia"> Tidak Tersedia</option>
+            <option value="Tidak Tersedia"> Tidak Tersedia</option>
         </select>
     </div>
     <div class="form-group">
