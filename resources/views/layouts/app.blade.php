@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Drivvy - Sewa Mobil') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -18,6 +18,7 @@
 </head>
 <body>
     <div id="app">
+        
         <nav>
             <div>
                 <!-- <a class="navbar-brand" href="{{ url('/') }}">
@@ -36,7 +37,13 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
-                        @guest
+                     
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container px-2 px-lg-0">
+        <a class="navbar-brand" href="#"><img src="{{asset('frontend/assets/logo.png')}}" width="160px" height="35px" alt=""></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">               
+        @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -49,6 +56,11 @@
                                 </li>
                             @endif
                         @else
+          </ul>
+        </div>
+                        </div>
+</nav>
+                      
                             <li class="nav-item dropdown">
                                 <!-- <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
